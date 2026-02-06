@@ -1,0 +1,34 @@
+.category {
+  width: 384px;
+}
+
+.category a {
+  text-decoration: none;
+  color: #000;
+}
+
+.category__image {
+  width: 384px;
+  height: 480px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.category__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.category h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.category p {
+  font-size: 14px;
+  line-height: 1.6;
+}

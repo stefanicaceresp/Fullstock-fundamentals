@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "name": "Polos",
+        "description": "Polos exclusivos con diseños que todo desarrollador querrá lucir. Ideales para llevar el código a donde vayas",
+        "products": []
+    },
+    {
+        "id": 2,
+        "name": "Tazas",
+        "description": "Tazas que combinan perfectamente con tu café matutino y tu pasión por la programación. ¡Empieza el día con estilo!",
+        "products": []
+    },
+    {
+        "id": 3,
+        "name": "Stickers",
+        "description": "Personaliza tu espacio de trabajo con nuestros stickers únicos y muestra tu amor por el desarrollo web.",
+        "products": []
+    }
+
+]

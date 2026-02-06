@@ -1,0 +1,101 @@
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #ffffff;
+  color: #ffffff;
+  padding: 80px 32px 32px 32px;
+}
+
+.footer__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 64px;
+}
+
+.footer__column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__column h4 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #1c2024
+}
+
+.footer__column a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #60646C;
+  font-size: 14px;
+}
+
+.footer__column a:hover {
+  opacity: 0.7;
+}
+
+.footer__column p {
+  font-size: 14px;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 400;
+  color: #60646C;
+  
+}
+
+.footer__bottom {
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #d9d9e0;
+  padding-top: 24px;
+  color: #60646C;
+}
+
+/* TEXTO */
+.footer__newsletter-text {
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: rgba(96, 100, 108, 1);
+}
+
+/* FORMULARIO */
+.footer__newsletter {
+  display: flex;
+  gap: 8px;
+}
+
+/* INPUT */
+.footer__newsletter input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #CDCED6;
+  border-radius: 12px;
+  font-size: 14px;
+  outline: none;
+  width: 335px; 
+}
+
+/* BOTÓN */
+.footer__newsletter button {
+  background-color: rgba(240, 240, 243, 1);
+  color: rgba(96, 100, 108, 1);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+
+}
+
+.footer__newsletter button:hover {
+  opacity: 0.9;
+}
+
+
