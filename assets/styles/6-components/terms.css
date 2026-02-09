@@ -1,0 +1,160 @@
+.terms-page {
+  padding: 80px 20px 120px;
+  background: #ffffff;
+  color: #171717;
+  min-height: 80vh;
+}
+
+.terms-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.terms-container h1 {
+  font-size: 2.5rem;     
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1C2024;
+}
+
+.terms-container .intro {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #171717;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.terms-container section {
+  margin-bottom: 4rem;
+}
+
+.terms-container h2 {
+  font-size: 1.875rem; 
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: #171717;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 0.5rem;
+}
+
+.terms-container p {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+  color: #171717;
+}
+
+.terms-container strong {
+  color: #171717;
+  font-weight: 600;
+}
+
+.terms-container em {
+  color: #171717;
+}
+
+.terms-container code {
+  background: #ffffff;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.terms-container ol,
+.terms-container dl {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #171717;
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.terms-container ol li {
+  margin-bottom: 1rem;
+}
+
+.terms-container dl dt {
+  font-weight: 600;
+  color: #171717;
+  margin-top: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.terms-container dl dd {
+  margin-left: 0;
+  padding-left: 1.5rem;
+  border-left: 3px solid #ffffff;
+}
+
+.terms-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+}
+
+.terms-container th,
+.terms-container td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #dadada;
+}
+
+.terms-container th {
+  background: #eeecec;
+  font-weight: 600;
+  color: #171717;
+}
+
+.terms-container figure {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.terms-container figcaption {
+  margin-top: 0.75rem;
+  font-style: italic;
+  color: #171717;
+  font-size: 0.95rem;
+}
+
+.terms-container address {
+  font-style: normal;
+  line-height: 1.8;
+}
+
+/* Enlaces con color de marca */
+.terms-container a {
+  color: #5B5BD6;
+  text-decoration: underline;
+}
+
+.terms-container a:hover {
+  color: #6C63FF;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .terms-page {
+    padding: 60px 16px 80px;
+  }
+  
+  .terms-container h1 {
+    font-size: 2rem;
+  }
+  
+  .terms-container h2 {
+    font-size: 1.5rem;
+  }
+  
+  .terms-container p,
+  .terms-container li,
+  .terms-container dd {
+    font-size: 1rem;
+  }
+}

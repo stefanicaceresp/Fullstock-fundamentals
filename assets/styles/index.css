@@ -20,7 +20,21 @@
 @import url("6-components/hero.css");
 @import url("6-components/promise.css");
 @import url("6-components/footer.css");
+@import url("6-components/products.css");
+@import url("6-components/cart.css");
+@import url("6-components/login.css");
+@import url("6-components/signup.css");
+@import url("6-components/checkout.css");
+@import url("6-components/about.css");
+@import url("6-components/terms.css");
+@import url("6-components/order-confirmation.css");
+
+
+
 
 /* 7. Utilities */
 @import url("7-utilities/utilities.css");
 
+body {
+  margin: 0;
+}

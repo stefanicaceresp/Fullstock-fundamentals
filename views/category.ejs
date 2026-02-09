@@ -2,17 +2,90 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title><%= category.name %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= category.name %> | Full Stock</title>
     <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/category.css" />
   </head>
   <body>
-    <header class="header">
-      <a href="/">← Volver</a>
-    </header>
+    <!-- ================= HEADER  ================= -->
+    <%- include('partials/header', { variant: 'header-main' }) %>
 
-    <main class="container">
-      <h1><%= category.name %></h1>
-      <p><%= category.description %></p>
+
+    <!-- cuerpo -->
+    <!-- Agregamos clase dinámica por categoría -->
+    <main class="category-page category-<%= category.name.toLowerCase() %>">
+
+      <div class="category-page__container">
+
+        <!-- Título y descripción dinámicos -->
+        <div class="category-intro">
+          <h1><%= category.name %></h1>
+          <p><%= category.description %></p>
+        </div>
+        <hr class="category-divider">
+
+        <div class="category-layout">
+
+          <!-- Filtro de precio -->
+          <form class="price-filter" method="GET">
+            <div class="price-filter__title">Precio</div>
+            
+            <div class="price-inputs">
+              <div class="price-group">
+                <label>Min</label>
+                <input type="number" name="min" value="<%= min || '' %>">
+              </div>
+              
+              <div class="price-group">
+                <label>Max</label>
+                <input type="number" name="max" value="<%= max || '' %>">
+              </div>
+            </div>
+            
+            <button type="submit">Filtrar Productos</button>
+          </form>
+          
+          <!-- Productos -->
+          <div class="products-grid">
+
+            <% category.products.forEach(product => { %>
+              <a href="/products/<%= product.id %>" class="product-card">
+                
+                <div class="product-image-container">
+                  <% if (product.discount && product.discount > 0) { %>
+                    <img src="/icons/oferta.png" alt="Oferta" class="oferta-icon">
+                  <% } %>
+
+                  <img src="<%= product.image %>" alt="<%= product.name %>">
+                </div>
+
+                <h3><%= product.name %></h3>
+                <p><%= product.description %></p>
+
+                <div class="price-container">
+                  <% if (product.discount && product.discount > 0) { %>
+                    <!-- Precio original tachado -->
+                    <span class="old-price">$<%= product.price %></span>
+                    <!-- Precio con descuento -->
+                    <span class="current-price">$<%= (product.price * (1 - product.discount)).toFixed(2) %></span>
+                  <% } else { %>
+                    <!-- Precio normal -->
+                    <span class="current-price">$<%= product.price %></span>
+                  <% } %>
+                </div>
+
+              </a>
+            <% }) %>
+
+          </div>
+
+        </div>
+      </div>
+
     </main>
+
+    <!-- ================= FOOTER ================= -->
+    <%- include('partials/footer') %>
   </body>
 </html>

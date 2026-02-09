@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito | FullStock</title>
+  <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+
+<%- include('partials/header', { variant: '' }) %>
+
+<main class="cart-page">
+  <div class="cart-container">
+
+    <h1 class="cart-title">Carrito</h1>
+
+    <div class="cart-card">
+
+      <% if (cart.length === 0) { %>
+        <p>Tu carrito está vacío.</p>
+      <% } else { %>
+
+        <% cart.forEach(item => { %>
+
+          <div class="cart-item">
+
+            <div class="cart-item__info">
+
+              <div class="cart-item__image">
+                <img src="<%= item.image %>" alt="<%= item.name %>">
+              </div>
+
+              <div class="cart-item__details">
+                <h3><%= item.name %></h3>
+                <p>$<%= item.price.toFixed(2) %></p>
+              </div>
+
+            </div>
+
+            <div class="cart-item__actions">
+
+              <!-- ELIMINAR -->
+              <a href="/remove/<%= item.id %>" class="delete-btn">
+                <img src="/icons/trash.png" alt="Eliminar">
+              </a>
+
+              <!-- CANTIDAD -->
+                <div class="quantity-controls">
+                  <button type="button" class="quantity-btn">
+                    <img src="/icons/menos.png" alt="Menos">
+                  </button>
+
+                  <button type="button" class="quantity-display">
+                    <%= item.quantity %>
+                  </button>
+
+                  <button type="button" class="quantity-btn">
+                    <img src="/icons/union.png" alt="Más">
+                  </button>
+                </div>
+
+
+
+            </div>
+
+          </div>
+
+        <% }) %>
+
+        <!-- TOTAL -->
+        <div class="cart-total">
+          <span>Total</span>
+          <span>$<%= total.toFixed(2) %></span>
+        </div>
+
+        <!-- BOTONES -->
+        <div class="cart-btn-wrapper">
+          <a href="/checkout" class="cart-btn">Continuar compra</a>
+        </div>
+
+      <% } %>
+
+    </div>
+  </div>
+</main>
+<%- include('partials/footer') %>
+</body>
+</html>

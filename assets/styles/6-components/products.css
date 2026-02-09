@@ -1,0 +1,106 @@
+.product-page {
+  padding: 100px 32px;
+  background: #ffffff;
+}
+
+.product-page__container {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: flex;
+  gap: 120px;              /* más aire como Figma */
+  align-items: flex-start;
+}
+
+/* ===== IMAGEN ===== */
+
+.product-image {
+  flex: 1;
+  background: rgba(0, 0, 85, 0.0235);
+  border-radius: 12px;
+  padding: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.product-image img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+
+/* ===== INFO ===== */
+
+.product-info {
+  flex: 1;
+  max-width: 584px;
+}
+
+.product-info h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #1C2024;
+}
+
+.product-price {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 38px;
+  color: #1C2024;
+}
+
+.product-description {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+  color: #60646C;
+}
+
+/* BOTÓN */
+
+.btn-primary {
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  padding: 14px 0;
+  text-align: center;
+
+  background: linear-gradient(90deg, #5b5bd6, #6c63ff);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.product-divider {
+  border: none;
+  border-top: 1px solid #D9D9E0;
+  margin: 40px 0;
+}
+
+/* CARACTERÍSTICAS */
+
+.product-info h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #5753C6;
+}
+
+.product-features {
+  padding-left: 20px;
+}
+
+.product-features li {
+  margin-bottom: 12px;
+  color: #60646C;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+}

@@ -1,0 +1,47 @@
+/* ================= SUCCESS PAGE ================= */
+
+.success-page {
+  padding: 80px 0 140px;
+}
+
+.success-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.greeting {
+  color: #5753C6;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.success-container h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1C2024;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #60646C;
+  margin-bottom: 60px;
+}
+
+.order-info {
+  margin-top: 30px;
+}
+
+.order-label {
+  font-size: 14px;
+  color: #1C2024;
+  margin-bottom: 8px;
+}
+
+.order-number {
+  font-size: 14px;
+  color: #5753C6;
+  font-weight: 500;
+}

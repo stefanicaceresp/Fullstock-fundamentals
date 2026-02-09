@@ -1,0 +1,55 @@
+<% const navVariant = typeof variant !== 'undefined' ? variant : '' %>
+
+
+<header class="<%= typeof variant !== 'undefined' ? variant : '' %>">
+  <!-- BARRA NEGRA -->
+  <div class="top-nav">
+    <div class="top-nav__container">
+      <div class="top-nav__actions">
+        <a href="/login">Iniciar sesión</a>
+        <a href="/signup">Crear una cuenta</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BARRA BLANCA -->
+  <div class="main-nav">
+    <div class="main-nav__container">
+      <div class="main-nav__logo">
+        <!-- Logo redirige al inicio -->
+        <a href="/">
+          <img src="/icons/logo.png" alt="FullStock" />
+        </a>
+      </div>
+
+      <nav class="main-nav__menu">
+        <a href="/categories/1">Polos</a>
+        <a href="/categories/2">Tazas</a>
+        <a href="/categories/3">Stickers</a>
+      </nav>
+
+      <div class="main-nav__icons <%= navVariant %>">
+
+
+
+
+  <% if (navVariant === 'header-auth') { %>
+
+    <a href="#">
+      <img src="/icons/lupa.png" alt="Buscar" />
+    </a>
+
+    <a href="#">
+      <img src="/icons/user.png" alt="Usuario" />
+    </a>
+  <% } %>
+
+    <a href="/cart">
+      <img src="/icons/carrito.png" alt="Carrito" />
+    </a>
+
+</div>
+
+    </div>
+  </div>
+</header>

@@ -10,39 +10,8 @@
   <body>
     <!-- ================= HEADER ================= -->
 
-    <header>
-      <!-- BARRA NEGRA -->
-      <div class="top-nav">
-        <div class="top-nav__container">
-          <div class="top-nav__actions">
-            <a href="#">Iniciar sesión</a>
-            <a href="#">Crear una cuenta</a>
-          </div>
-        </div>
-      </div>
+    <%- include('partials/header', { variant: 'header-main' }) %>
 
-      <!-- BARRA BLANCA -->
-      <div class="main-nav">
-        <div class="main-nav__container">
-          <!-- LOGO -->
-          <div class="main-nav__logo">
-            <img src="/icons/logo.png" alt="FullStock" />
-          </div>
-
-          <!-- MENÚ -->
-          <nav class="main-nav__menu">
-            <a href="/categories/1">Polos</a>
-            <a href="/categories/2">Tazas</a>
-            <a href="/categories/3">Stickers</a>
-          </nav>
-
-          <!-- ICONOS -->
-          <div class="main-nav__icons">
-            <img src="/icons/carrito.png" alt="Carrito" />
-          </div>
-        </div>
-      </div>
-    </header>
 
     <!-- ================= HERO ================= -->
 
@@ -160,51 +129,6 @@
     </section>
 
     <!-- ================= FOOTER ================= -->
-
-    <footer class="footer">
-      <div class="footer__container">
-        <!-- COLUMNA 1 -->
-        <div class="footer__column">
-          <h4>Tienda</h4>
-          <a href="/categories/1">Polos</a>
-          <a href="/categories/2">Tazas</a>
-          <a href="/categories/3">Stickers</a>
-        </div>
-
-        <!-- COLUMNA 2 -->
-        <div class="footer__column">
-          <h4>Compañía</h4>
-          <a href="#">Quiénes somos</a>
-          <a href="#">Términos y condiciones</a>
-          <p>Privacidad</p>
-        </div>
-
-        <!-- COLUMNA 3 -->
-        <div class="footer__column">
-          <h4>Conecta</h4>
-          <p>WhatsApp</p>
-          <p>Facebook</p>
-          <p>Instagram</p>
-        </div>
-
-        <!-- COLUMNA 4 -->
-        <div class="footer__column">
-          <h4>Suscríbete a nuestro boletín</h4>
-          <p class="footer__newsletter-text">
-            Recibe las últimas ofertas y descuentos en tu correo semanalmente.
-          </p>
-
-          <form class="footer__newsletter">
-            <input type="email" placeholder="Ingresa tu correo" required />
-            <button type="submit">Suscribirse</button>
-          </form>
-        </div>
-      </div>
-
-      <!-- PARTE INFERIOR -->
-      <div class="footer__bottom">
-        Todos los derechos reservados © Full Stock
-      </div>
-    </footer>
+    <%- include('partials/footer') %>
   </body>
 </html>

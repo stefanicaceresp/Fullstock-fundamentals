@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= product.name %> | FullStock</title>
+
+    <!-- CSS global -->
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+    <%- include('partials/header', { variant: 'header-main' }) %>
+
+
+    <!-- ================= PRODUCT DETAIL ================= -->
+    <main class="product-page">
+      <div class="product-page__container">
+        <!-- Imagen -->
+        <div class="product-image">
+          <img src="<%= product.image %>" alt="<%= product.name %>" />
+        </div>
+
+        <!-- Información -->
+        <div class="product-info">
+          <h1><%= product.name %></h1>
+
+          <p class="product-price">$<%= product.price %></p>
+
+          <p class="product-description"><%= product.description %></p>
+
+          <!-- Botón funcional -->
+          <a href="/add-to-cart/<%= product.id %>?from=/cart" class="btn-primary">
+            Agregar al carrito
+          </a>
+
+
+
+
+          <hr class="product-divider" />
+
+          <h3>Características</h3>
+          <ul class="product-features">
+
+            <% if (product.category === "Polos") { %>
+              <li>Estampado resistente que mantiene sus colores vibrantes lavado tras lavado.</li>
+              <li>Hecho de algodón suave que asegura comodidad y frescura.</li>
+              <li>Costuras reforzadas para una mayor durabilidad.</li>
+              <li>Corte moderno que se adapta perfectamente al cuerpo.</li>
+
+            <% } else if (product.category === "Tazas") { %>
+              <li>Fabricada en cerámica de alta calidad.</li>
+              <li>Apta para microondas y lavavajillas.</li>
+              <li>Impresión duradera que no se desgasta con el uso.</li>
+              <li>Capacidad ideal para café, té o chocolate caliente.</li>
+
+            <% } else if (product.category === "Stickers") { %>
+              <li>Material vinílico resistente al agua.</li>
+              <li>Adhesivo de larga duración.</li>
+              <li>Colores vibrantes y acabado mate.</li>
+              <li>Perfecto para laptops, cuadernos y botellas.</li>
+            <% } %>
+
+          </ul>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <%- include('partials/footer') %>
+  </body>
+</html>

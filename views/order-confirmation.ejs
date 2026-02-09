@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¡Gracias por tu compra! | FullStock</title>
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="/styles/index.css" />
+</head>
+
+<body>
+
+  <!-- HEADER (YA EXISTENTE) -->
+  <%- include('partials/header', { variant: 'header-main' }) %>
+
+  <!-- ================= SUCCESS PAGE ================= -->
+  <main class="success-page">
+    <div class="success-container">
+
+      <p class="greeting">¡Muchas gracias por tu compra!</p>
+
+      <h1>Tu orden está en camino</h1>
+
+      <p class="subtitle">
+        Llegaremos a la puerta de tu domicilio lo antes posible
+      </p>
+
+      <div class="order-info">
+        <p class="order-label">Número de orden</p>
+        <p class="order-number"><%= orderId %></p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER (YA EXISTENTE) -->
+  <%- include('partials/footer') %>
+
+</body>
+</html>

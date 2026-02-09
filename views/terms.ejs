@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Términos y condiciones | FullStock</title>
+  <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+
+  <%- include('partials/header', { variant: '' }) %>
+
+  <main class="terms-page">
+    <div class="terms-container">
+      <h1>Términos y condiciones de FullStock</h1>
+      
+      <p class="intro">
+        <em>Bienvenidos a FullStock, la tienda e-commerce favorita de los desarrolladores web. 
+        Aquí te explicamos todo lo que necesitas saber antes de comprar con nosotros.</em>
+      </p>
+
+      <section>
+        <h2>Acerca de Nosotros</h2>
+        <p>
+          FullStock es una tienda dedicada a ofrecer <strong>artículos de calidad para desarrolladores</strong>. 
+          Desde polos exclusivos hasta stickers que elevan el nivel de tus gadgets, 
+          <em>¡aquí lo tenemos todo!</em>
+        </p>
+      </section>
+
+      <section>
+        <h2>Condiciones de Uso</h2>
+        <ol>
+          <li>
+            <strong>Ser mayor de 18 años:</strong> Para realizar una compra, debes tener la mayoría de edad.
+          </li>
+          <li>
+            <strong>Respetar nuestros diseños:</strong> Todos los diseños en FullStock son <em>exclusivos</em> y están protegidos por derechos de autor. ¡Nada de plagios!
+          </li>
+          <li>
+            <strong>No maltratar tus pedidos:</strong> Nos aseguramos de ofrecer productos de calidad, pero, por favor, no uses nuestros <code>stickers</code> como posavasos.
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Proceso de Compra</h2>
+        <ol>
+          <li>Selecciona tus productos: Navega por nuestras categorías de <strong>polos</strong>, tazas y stickers.</li>
+          <li>Añade al carrito: Haz clic en el botón <strong>Agregar al Carrito</strong> en la página de producto.</li>
+          <li>Completa el pago: Llena el formulario de pago y confirma tu compra. <strong>¡Es fácil!</strong></li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Métodos de Pago</h2>
+        <p>Aceptamos los siguientes métodos de pago:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Método de Pago</th>
+              <th>Comisión</th>
+              <th>Tiempo de Procesamiento</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tarjeta de Crédito</td>
+              <td>0%</td>
+              <td>Inmediato</td>
+            </tr>
+            <tr>
+              <td>PayPal</td>
+              <td>0.5%</td>
+              <td>Inmediato</td>
+            </tr>
+            <tr>
+              <td>Transferencia Bancaria</td>
+              <td>1%</td>
+              <td>1-2 días hábiles</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Política de Devoluciones</h2>
+        <p>¿No estás contento con tu compra? Aquí tienes nuestras políticas de devolución:</p>
+        <dl>
+          <dt><strong>Devolución estándar:</strong></dt>
+          <dd>Te devolvemos tu dinero dentro de los 30 días posteriores a la compra.</dd>
+          
+          <dt><strong>Devolución por defectos:</strong></dt>
+          <dd>Si tu producto tiene algún defecto, ¡lo reemplazamos sin preguntas!</dd>
+          
+          <dt><strong>Política de no devolución:</strong></dt>
+          <dd>Productos usados o dañados por mal uso no aplican para devolución.</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Garantía de Satisfacción</h2>
+        <p>En FullStock nos enorgullecemos de la calidad de nuestros productos.</p>
+        <figure>
+          <img src="/images/red-satisfaction-guarantee-stamp.png" 
+               alt="Sello rojo de garantía de satisfacción" 
+               width="200" height="200">
+          <figcaption>Garantía de Satisfacción: Si no te gusta, ¡te devolvemos el dinero!</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Tiempos de Entrega</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Región</th>
+              <th>Tiempo de Entrega Estimado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>América Latina</td><td>3-5 días hábiles</td></tr>
+            <tr><td>Europa</td><td>5-7 días hábiles</td></tr>
+            <tr><td>Asia</td><td>7-10 días hábiles</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Contacto</h2>
+        <p>¿Tienes dudas? ¡Nos encantaría ayudarte! Puedes contactarnos en cualquier momento:</p>
+        <address>
+          Email: <a href="mailto:soporte@fullstock.com">soporte@fullstock.com</a><br>
+          Teléfono: +1 234 567 890
+        </address>
+        <p><small>O visita nuestra <a href="/contacto">página de contacto</a> para más detalles.</small></p>
+      </section>
+    </div>
+  </main>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

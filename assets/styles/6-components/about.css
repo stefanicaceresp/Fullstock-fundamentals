@@ -1,0 +1,98 @@
+.about-page {
+  padding: 80px 20px 120px;  
+  background: #ffffff; 
+  min-height: 80vh;
+}
+
+.about-container {
+  max-width: 768px;
+  margin: 0 auto;
+  color: #171717;
+}
+
+.about-container h1 {
+  font-size: 36px; 
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 30px;
+  color: #171717;
+  max-width: 704px;
+}
+
+
+.about-container h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #171717;
+  text-align: left;     
+  max-width: 704px; 
+}
+
+.about-container p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  color: #171717;
+  text-align: left;
+  font-weight: 400;
+  max-width: 704px;
+}
+
+.about-container ul {
+  list-style: none;
+  padding: 0;
+  max-width: 720px;
+  margin: 0 auto 32px;
+  text-align: left;
+  max-width: 704px;
+}
+
+.about-container ul li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 36px;
+  color: #171717;
+  text-align: left;
+  max-width: 672px;
+}
+
+.about-container ul li::before {
+  content: "•";
+  position: absolute;
+  left: 6px;
+  color: #6D28D9;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: bold;
+  
+}
+
+.about-container ul li strong {
+  color: #171717;
+  font-weight: 700;
+}
+
+
+/* Responsividad básica */
+/* @media (max-width: 768px) {
+  .about-page {
+    padding: 60px 16px 80px;
+  }
+
+  .about-container h1 {
+    font-size: 36px;
+  }
+
+  .about-section h2 {
+    font-size: 28px;
+  }
+
+  .about-intro p,
+  .about-section p,
+  .about-section ul li {
+    font-size: 16px;
+  }
+} */

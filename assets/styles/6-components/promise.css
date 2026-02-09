@@ -1,14 +1,17 @@
 /* ================= PROMISE SECTION ================= */
 
 .promise {
+  width: 100%;
   padding: 100px 32px;
-  background: rgba(0, 0, 85, 0.0235)
+  background: rgba(0, 0, 85, 0.0235);
 }
 
 .promise__container {
   max-width: 1280px;
   margin: 0 auto;
 }
+
+
 
 .promise__title {
   font-size: 32px;

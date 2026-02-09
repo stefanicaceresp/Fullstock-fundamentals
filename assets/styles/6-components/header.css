@@ -45,7 +45,7 @@
 }
 
 .main-nav__logo img {
-  height: 32px;
+  height: 40px;
 }
 
 .main-nav__menu {
@@ -60,12 +60,41 @@
   text-decoration: none;
 }
 
+
+/* ===== ICONS BASE ===== */
 .main-nav__icons {
   display: flex;
-  gap: 20px;
+  gap: 24px;
+  align-items: center;
+}
+
+.main-nav__icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .main-nav__icons img {
+  object-fit: contain;
+}
+
+/* ===== HEADER PRINCIPAL ===== */
+/* Solo carrito visible y grande */
+.main-nav__icons.header-main img {
+  width: 40px;
+  height: 40px;
+}
+
+/* ===== HEADER AUTH (login/signup) ===== */
+/* Lupa y usuario pequeños */
+.main-nav__icons.header-auth a:not(:last-child) img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Carrito SIEMPRE grande */
+.main-nav__icons.header-auth a:last-child img {
   width: 40px;
   height: 40px;
 }
